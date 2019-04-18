@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy" rel="stylesheet">
+    <style>
+        body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    h1 {
+        font-family: 'Satisfy', cursive;
+        margin-top: 5%;
+        font-size: 100px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weathify</h1>
+        <h2>The weather app for impulsive travelers</h2>
+        <p>In which nearest European capital is it...</p>
+
+        <button>🌞 Sunny</button> <button>🌧 Rainy</button> <button>🌥 Cloudy</button>
+        <button>❄️ Snowing</button>
+        <!-- User chooses what they are looking for -->
+        <br />
+        <br>
+        <h3>Let us know your location to find the nearest city</h3>
+        <div>
+            <form>
+                <input type="text" id="city-input" placeholder="Where are you know?" autofocus="on" />
+                <input type="submit" value="Search" id="button" />
+            </form>
+        </div>
+        <br />
+        <h2>Today, it is <span class="description">SUNNY</span> in</h2>
+        <!-- SUNNY to be replaced by the choice above -->
+        <div>
+
+            <h3>Nearest capital city</h3>
+
+            <div class="card mb-3" style="max-width: 700px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <h2 class="card-title">25ºC</h2>
+                        <p class="card-text">15:15</p>
+                        <p>Wind Speed: <span class="temperature">27</span>km/h</p>
+                        <p>Precipitation: <span class="temperature">15</span>%</p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="current-location">Lisbon, Portugal</h2>
+                            <p class="card-text">
+                                PLACEHOLDER TEXT
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Book your flight now!</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <p class="weekDay"><b>Monday</b></p>
+                    <p class="temperature"><b>10-27ºC</b></p>
+                    <p>🌞 Sunny</p>
+                </div>
+                <div class="col-sm">
+                    <p class="weekDay"><b>Tuesday</b></p>
+                    <p class="temperature"><b>10-27ºC</b></p>
+                    <p>🌞 Sunny</p>
+                </div>
+                <div class="col-sm">
+                    <p class="weekDay"><b>Wednesday</b></p>
+                    <p class="temperature"><b>10-27ºC</b></p>
+                    <p>🌥 Cloudy</p>
+                </div>
+                <div class="col-sm">
+                    <p class="weekDay"></p><b>Thursday</b></p>
+                    <p class="temperature"><b>10-27ºC</b></p>
+                    <p>🌧 Rainy</p>
+                </div>
+                <div class="col-sm">
+                    <p class="weekDay"></p><b>Friday</b></p>
+                    <p class="temperature"><b>10-27ºC</b></p>
+                    <p>🌞 Sunny</p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <h2>Other Cities</h2>
+            <br>
+
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Vienna, Austria</h3>
+                        <h2 class="temperature">12ºC</h2>
+                        <p>16:15</p>
+
+                    </div>
+                    <div class="card-footer">
+                        <<div class="row">
+                            <div class="col-sm-2">
+                                <p><b>Monday</b></p>
+                                <p class="temperature"><b>10-27ºC</b></p>
+                                <p>🌞 Sunny</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p><b>Tuesday</b></p>
+                                <p class="temperature"><b>10-27ºC</b></p>
+                                <p>🌞 Sunny</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p><b>Wednesday</b></p>
+                                <p class="temperature"><b>10-27ºC</b></p>
+                                <p>🌧 Rainy</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p><b>Thursday</b></p>
+                                <p class="temperature"><b>10-27ºC</b></p>
+                                <p>🌞 Sunny</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p><b>Friday</b></p>
+                                <p class="temperature"><b>10-27ºC</b></p>
+                                <p>🌞 Sunny</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p><b>Saturday</b></p>
+                                <p class="temperature"><b>10-27ºC</b></p>
+                                <p>🌧 Rainy</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>KIEV, Ukraine</h3>
+                    <h2 class="temperature">12ºC</h2>
+                    <p>16:15</p>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <p><b>Monday</b></p>
+                            <p class="temperature"><b>10-27ºC</b></p>
+                            <p>🌞 Sunny</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p><b>Tuesday</b></p>
+                            <p class="temperature"><b>10-27ºC</b></p>
+                            <p>🌞 Sunny</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p><b>Wednesday</b></p>
+                            <p class="temperature"><b>10-27ºC</b></p>
+                            <p>🌧 Rainy</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p><b>Thursday</b></p>
+                            <p class="temperature"><b>10-27ºC</b></p>
+                            <p>🌞 Sunny</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p><b>Friday</b></p>
+                            <p class="temperature"><b>10-27ºC</b></p>
+                            <p>🌞 Sunny</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <p><b>Saturday</b></p>
+                            <p class="temperature"><b>10-27ºC</b></p>
+                            <p>🌧 Rainy</p>
+                        </div>
+                    </div>
+                    <script></script>
+</body>
+
+</html>
